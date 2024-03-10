@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@azure/communication-email": "^1.0.0",
+    "@azure/service-bus": "^7.9.4",
+    "@azure/storage-blob": "^12.17.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.4.0",
+    "mongoose": "^8.2.0",
+    "parse-multipart": "^1.0.4",
+    "sharp": "^0.33.2"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "bindings": [
+    {
+      "name": "myBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "userimages/{blobName}",
+      "connection": "cst8917blobstorageacc_STORAGE"
+    }
+  ]
+}

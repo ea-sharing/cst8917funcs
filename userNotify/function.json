@@ -1,0 +1,11 @@
+﻿{
+  "bindings": [
+    {
+      "name": "mySbMsg",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "queueName": "user-notifications",
+      "connection": "cst8917sbus_RootManageSharedAccessKey_SERVICEBUS"
+    }
+  ]
+}
