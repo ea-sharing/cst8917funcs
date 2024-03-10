@@ -4,17 +4,17 @@ const { ServiceBusClient } = require("@azure/service-bus");
 const { MongoClient } = require('mongodb');
 
 // MongoDB configuration
-const mongoConnectionString = "mongodb://cst8917cosmodbacc:LNOtxW2VG8OX14sAHPna6FDZGpZaH09fyUC2BUas3P0DXu8dYBFUHDq8jF7F87kWhIhD0H4kEjQDACDbX2NFiQ==@cst8917cosmodbacc.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@cst8917cosmodbacc@";
-const mongoDbName = "userdb";
-const mongoCollectionName = "usercolid";    
+const mongoConnectionString = "<mongoConnectionString>";
+const mongoDbName = "<mongoDbName>";
+const mongoCollectionName = "<mongoCollectionName>";    
 
 // Azure Blob Storage configuration
-const connectionString = "DefaultEndpointsProtocol=https;AccountName=cst8917blobstorageacc;AccountKey=hEiR5VfV3JM8PI3zQJeJG7Y9UBAnX8EuTl5+sigax8GuXOeyhbBl05APCEGMr6WnTg1mMYiLzQx7+AStaJqclA==;EndpointSuffix=core.windows.net";
-const containerName = "userimages";
+const connectionString = "<connectionString>";
+const containerName = "<containername>";
 
 // Service Bus configuration
-const serviceBusConnectionString = "Endpoint=sb://cst8917sbus.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=QEA/j8qztBk3Ressi2x4C9uvT9A8unTWd+ASbL4jIpM=";
-const queueName = "user-notifications";
+const serviceBusConnectionString = "<serviceBusConnectionString>";
+const queueName = "<queueName>";
 
 module.exports = async function (context, myBlob) {
     const blobName = context.bindingData.blobTrigger; // Use the correct binding data to get the blob name

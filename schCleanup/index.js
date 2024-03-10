@@ -1,8 +1,8 @@
-﻿const { BlobServiceClient } = require('@azure/storage-blob');
+﻿const { BlobServiceClient } = require('@azure/storage-blob'); 
 
 // Azure Blob Storage configuration
-const connectionString = "DefaultEndpointsProtocol=https;AccountName=cst8917blobstorageacc;AccountKey=hEiR5VfV3JM8PI3zQJeJG7Y9UBAnX8EuTl5+sigax8GuXOeyhbBl05APCEGMr6WnTg1mMYiLzQx7+AStaJqclA==;EndpointSuffix=core.windows.net";
-const containerName = "userimages";
+const connectionString = "<connectionString>";
+const containerName = "<containername>";
 
 module.exports = async function (context, myTimer) {
     // Connect to Azure Blob Storage

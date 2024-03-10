@@ -2,9 +2,9 @@ const { MongoClient } = require('mongodb');
 const userModel = require('../userModel');
 
 // MongoDB configuration
-const connectionString = "mongodb://cst8917cosmodbacc:LNOtxW2VG8OX14sAHPna6FDZGpZaH09fyUC2BUas3P0DXu8dYBFUHDq8jF7F87kWhIhD0H4kEjQDACDbX2NFiQ==@cst8917cosmodbacc.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@cst8917cosmodbacc@";
-const dbName = "userdb";
-const collectionName = "usercolid";
+const mongoConnectionString = "<mongoConnectionString>";
+const mongoDbName = "<mongoDbName>";
+const mongoCollectionName = "<mongoCollectionName>";    
 
 module.exports = async function (context, req) {
     const { firstName, lastName, email, password } = req.body;

@@ -3,17 +3,17 @@ const { BlobServiceClient } = require('@azure/storage-blob');
 const { MongoClient, ObjectId } = require('mongodb');
 const multipart = require("parse-multipart");
 
-// Azure Blob Storage configuration
-const connectionString = "DefaultEndpointsProtocol=https;AccountName=cst8917blobstorageacc;AccountKey=hEiR5VfV3JM8PI3zQJeJG7Y9UBAnX8EuTl5+sigax8GuXOeyhbBl05APCEGMr6WnTg1mMYiLzQx7+AStaJqclA==;EndpointSuffix=core.windows.net";
-const containerName = "userimages";
-
 // MongoDB configuration
-const mongoConnectionString = "mongodb://cst8917cosmodbacc:LNOtxW2VG8OX14sAHPna6FDZGpZaH09fyUC2BUas3P0DXu8dYBFUHDq8jF7F87kWhIhD0H4kEjQDACDbX2NFiQ==@cst8917cosmodbacc.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@cst8917cosmodbacc@";
-const mongoDbName = "userdb";
-const mongoCollectionName = "usercolid";
+const mongoConnectionString = "<mongoConnectionString>";
+const mongoDbName = "<mongoDbName>";
+const mongoCollectionName = "<mongoCollectionName>";    
+
+// Azure Blob Storage configuration
+const connectionString = "<connectionString>";
+const containerName = "<containername>";
 
 // JWT configuration
-const jwtSecret = "ZGpZaH09fyUC2BUas3P0DXu8dYBFUHDq8jF7F8"; // Same secret key used in User Login Function
+const jwtSecret = "<your jwt>"; // Same secret key used in User Login Function
 
 module.exports = async function (context, req) {
     const token = req.headers.token;

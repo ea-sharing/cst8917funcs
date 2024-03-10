@@ -2,12 +2,13 @@
 const { EmailClient } = require("@azure/communication-email");
 
 // Service Bus configuration
-const serviceBusConnectionString = "Endpoint=sb://cst8917sbus.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=QEA/j8qztBk3Ressi2x4C9uvT9A8unTWd+ASbL4jIpM=";
+const serviceBusConnectionString = "<serviceBusConnectionString>";
 
 // Email service configuration
-const fromEmail = "DoNotReply@673bc09c-3cd1-49e7-b095-c0eb8459bfaa.azurecomm.net";
-const emailconnectionString = "endpoint=https://cst8917commservice.canada.communication.azure.com/;accesskey=3yZ8EL2j7M+0W8J+WQMxOkZrxKKkpyaB+xR2NDJpNSP80s7yYPlvBfSCeoPB8xDuYuPg+tBTQIoU97jIef5NTw==";
+const fromEmail = "DoNotReply@EXAMPLE-Azure.net";
+const emailconnectionString = "<emailconnectionString>";
 const client = new EmailClient(emailconnectionString);
+
 
 
 
